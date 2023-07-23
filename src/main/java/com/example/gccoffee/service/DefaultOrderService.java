@@ -34,4 +34,9 @@ public class DefaultOrderService implements OrderService {
     return orderRepository.insert(order);
   }
 
+  @Override
+  public List<Order> getAllOrders() {
+    return orderRepository.findAll();
+  }
+
 }
